@@ -372,3 +372,13 @@ empower.net, 63cb0332e4b01718f069d4cb, DIRECT
 google.com, pub-7983651257838282, RESELLER, f08c47fec0942fa0
 opera.com,pub9443931419968,DIRECT,55a0c5fd61378de3
 improvedigital.com, 2320, RESELLER
+
+applovin.com, ce2f0c3a1a390f0eb119b55fcba2ca6b, DIRECT
+loopme.com, 11303, RESELLER, 6c8d5f95897a5a3b
+rubiconproject.com, 16356, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807
+pubmatic.com, 158154, RESELLER, 5d62403b186f2ace
+pubmatic.com, 158862, RESELLER, 5d62403b186f2ace
+pubmatic.com, 159509, RESELLER, 5d62403b186f2ace
+xandr.com, 13799, RESELLER
+media.net, 8CUD06Z68, RESELLER
