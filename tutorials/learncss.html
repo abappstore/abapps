@@ -398,25 +398,48 @@
 								</div>
 
 								</div>
-								
-								
+
 								<br>
-							
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
+								
+								<div class="row bg-white shadow-sm p-3">
 								<h2>The CSS Universal Selector</h2>
 								<p>The universal selector (*) selects all HTML 
 								elements on the page.</p>
 								<div class="w3-example">
 								<h3>Example</h3>
 								<p>The CSS rule below will affect every HTML element on the page:&nbsp;</p>
-								<div class="w3-code notranslate cssHigh">
-								  *
-								{<br>
-								&nbsp;&nbsp;text-align: center;<br>
-								&nbsp;&nbsp;color: blue;<br>
-								}
+								<div class="w3-code notranslate htmlHigh">
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;style&gt;<br>
+									* {<br>
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+									}<br>
+									&lt;/style&gt;<br>
+									&lt;/head&gt;<br>
+									&lt;body&gt;<br><br>
+
+									&lt;h1&gt;Hello world!&lt;/h1&gt;<br><br>
+
+									&lt;p&gt;Every element on the page will be affected by the style.&lt;/p&gt;<br>
+									&lt;p id=&quot;para1&quot;&gt;Me too!&lt;/p&gt;<br>
+									&lt;p&gt;And me!&lt;/p&gt;<br><br>
+
+									&lt;/body&gt;<br>
+									&lt;/html&gt;<br>
+								</div>
+								
+								<hr>
+								
+								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
+									<div style="text-align:center;color:blue;">
+										<h1 style="color:blue;">Hello world!</h1>
+										<p>Every element on the page will be affected by the style.</p>
+										<p id="para1">Me too!</p>
+										<p>And me!</p>
+									</div>
 								</div>
 
 								</div>
@@ -426,37 +449,47 @@
 								<h2>The CSS Grouping Selector</h2>
 								<p>The grouping selector selects all the HTML elements with the same style 
 								definitions.</p>
-								<p>Look at the following CSS code (the h1, h2, and p elements have the same 
-								style definitions):</p>
 								<div class="w3-example">
-								<div class="w3-code notranslate cssHigh">
-								h1
-								{<br>
-								&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;color: red;<br>
-								}<br>
-								<br>h2
-								{<br>
-								  &nbsp;
-								text-align: center;<br>&nbsp; color: red;<br>}<br>
-								<br>p
-								{<br>
-								&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;color: red;<br>
-								}</div></div>
+									<div class="w3-code notranslate htmlHigh">
+										&lt;!DOCTYPE html&gt;<br>
+										&lt;html&gt;<br>
+										&lt;head&gt;<br>
+										&lt;style&gt;<br>
+										h1, h2, p {<br>
+										  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+										  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+										}<br>
+										&lt;/style&gt;<br>
+										&lt;/head&gt;<br>
+										&lt;body&gt;<br><br>
 
+										&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+										&lt;h2&gt;Smaller heading!&lt;/h2&gt;<br>
+										&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+
+										&lt;/body&gt;<br>
+										&lt;/html&gt;<br>
+									</div>
+								</div>
+								
+								<hr>
+								
+								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
+									<div style="text-align:center;color:red;">
+										<h1 style="color:red;">Hello World!</h1>
+										<h2 style="color:red;">Smaller heading!</h2>
+										<p>This is a paragraph.</p>
+									</div>
+								</div>
 
 								<p>It will be better to group the selectors, to minimize the code.</p>
 								<p>To group selectors, separate each selector with a comma.</p>
-								<div class="w3-example">
-								<h3>Example</h3>
-								<p>In this example we have grouped the selectors from the code above:&nbsp;</p>
-								<div class="w3-code notranslate cssHigh">
-								h1, h2, p
-								{<br>
-								  &nbsp;
-								text-align: center;<br>&nbsp;&nbsp;color: red;<br>}</div>
-
-								</div>
-							</div><br>
+							</div>
+							
+							</div>
+							
+							
+							
 							
 						</div>
 							
