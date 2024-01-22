@@ -474,3 +474,15 @@ pubmatic.com, 158862, RESELLER, 5d62403b186f2ace
 pubmatic.com, 159509, RESELLER, 5d62403b186f2ace
 xandr.com, 13799, RESELLER
 media.net, 8CUD06Z68, RESELLER
+rubiconproject.com, 26184, reseller, 0bfd66d529a55807
+lijit.com, 488437, reseller, fafdf38b16bf6b2b
+openx.com, 538959099, reseller, 6a698e2ec38604c6
+pubmatic.com, 164079, reseller, 5d62403b186f2ace
+rubiconproject.com, 17960, reseller, 0bfd66d529a55807
+appnexus.com, 1019, reseller, f5ab79cb980f11d1
+chocolateplatform.com, 19559, reseller
+pubmatic.com, 160888, reseller, 5d62403b186f2ace
+inmobi.com, fe4db13744124582a6a2b18964560ce7, reseller, 83e75a7ae333ca9d
+smartadserver.com, 4395, reseller, 060d053dcf45cbf3
+sharethrough.com, oaw69fon, reseller, d53b998a7bd4ecd2
+contextweb.com, 563114, reseller, 89ff185a4c4e857c
