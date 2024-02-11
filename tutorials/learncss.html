@@ -1,542 +1,574 @@
-    <!doctype html>
-        <html lang="en">
-        <head>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y03Y0E8NVW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!doctype html>
+<html lang="en">
 
-  gtag('config', 'G-Y03Y0E8NVW');
-</script>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>Learn CSS Tutorial</title>
-            <link rel="shortcut icon" href="../assets/images/other/fav.png" type="image/x-icon">
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-            <link rel="shortcut icon" href="../assets/images/other/fav.png">
-            <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-            <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
-			<!-- Yandex.RTB -->
-			<script>window.yaContextCb=window.yaContextCb||[]</script>
-			<script src="https://yandex.ru/ads/system/context.js" async></script>
-			<style>
-			div.scroll-container {
-			  background-color: #333;
-			  overflow: auto;
-			  white-space: nowrap;
-			  padding: 5px;
-			}
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y03Y0E8NVW"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-			div.scroll-container img {
-			  padding: 5px;
-			}
-			</style>
-        </head>
-		<body>
-			<!-- Yandex.RTB R-A-3845676-11 -->
-			<script>
-			window.yaContextCb.push(()=>{
-				Ya.Context.AdvManager.render({
-					"blockId": "R-A-3845676-11",
-					"type": "fullscreen",
-					"platform": "desktop"
-				})
+		gtag('config', 'G-Y03Y0E8NVW');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Learn CSS Tutorial</title>
+	<link rel="shortcut icon" href="../assets/images/other/fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="../assets/images/other/fav.png">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+	<!-- Yandex.RTB -->
+	<script>window.yaContextCb = window.yaContextCb || []</script>
+	<script src="https://yandex.ru/ads/system/context.js" async></script>
+	<style>
+		div.scroll-container {
+			background-color: #333;
+			overflow: auto;
+			white-space: nowrap;
+			padding: 5px;
+		}
+
+		div.scroll-container img {
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Yandex.RTB R-A-3845676-11 -->
+	<script>
+		window.yaContextCb.push(() => {
+			Ya.Context.AdvManager.render({
+				"blockId": "R-A-3845676-11",
+				"type": "fullscreen",
+				"platform": "desktop"
 			})
-			</script>
-            <header class="head">
-                <div class="logo border-bottom">
-                    <a href="../index.html"><img class="w-100" src="../assets/images/other/logo.jpg" alt="Website Logo" /></a>
-                     <a class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="bi bi-list"></i>
-                    </a>
-                </div>
-                <div id="navbarNav" class="navcol pt-0 d-none d-lg-block">
-                <ul>
-                    <li class="border-bottom"><a href="../index.html"><i class="bi  bi-house-door fs-6 me-2"></i> Home</a></li>
-                    <li class="border-bottom"><a href="../index.html"><i class="bi fs-6 me-2 bi-window-stack"></i> TOP APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-controller"></i> TOP GAMES</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-duffle-fill"></i> EDUCATION APPS</a></li>
-                    <li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-gear"></i> TOOLS APPS</a></li>
-                    <li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-chat-heart-fill"></i> COMMUNICATION APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-wechat"></i> SOCIAL APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-camera-video-fill"></i> VIDEO PLAYERS APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-collection-play-fill"></i> EDITORS APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-ui-checks-grid"></i> PEODUCTIVITY APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-cart"></i> SHOPPING APPS</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6 bi bi-shield-lock-fill"></i> PRIVACY POLICY</a></li>
-                    <li class="border-bottom"><a href="#"><i class="bi me-2 bi-chat-left-dots"></i> Contact Us</a></li>
-					<li class="border-bottom"><a href="../sitemap.html"><i class="bi me-2 bi bi-diagram-3"></i> Site Map</a></li>
-					<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6 bi-info-square"></i> About Us</a></li>
-                </ul>
-            </div>
-            </header>
-            <div  class="main-content">
-               <div class="section-container p-2 p-xl-4">
-                   <div class="row">
-                        <div class="col-md-0 ps-4 ps-lg-3">
-                            <div class="row bg-white shadow-sm p-3">
-								<h1>CSS <span class="color_h1">Syntax</span></h1>
-								<hr>
-								<p class="intro">A CSS rule consists of a selector and a declaration block.</p>
-                            </div>
-							
-							<div class="about row p-2 py-3 bg-white mt-4 shadow-sm">
-								<!-- Yandex.RTB R-A-3845676-8 -->
-								<div id="yandex_rtb_R-A-3845676-8"></div>
-								<script>
-								window.yaContextCb.push(()=>{
-									Ya.Context.AdvManager.render({
-										"blockId": "R-A-3845676-8",
-										"renderTo": "yandex_rtb_R-A-3845676-8"
-									})
-									})
-								</script>
-							</div><br>
+		})
+	</script>
+	<header class="head">
+		<div class="logo border-bottom">
+			<a href="../index.html"><img class="w-100" src="../assets/images/other/logo.jpg" alt="Website Logo" /></a>
+			<a class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<i class="bi bi-list"></i>
+			</a>
+		</div>
+		<div id="navbarNav" class="navcol pt-0 d-none d-lg-block">
+			<ul>
+				<li class="border-bottom"><a href="../index.html"><i class="bi  bi-house-door fs-6 me-2"></i> Home</a>
+				</li>
+				<li class="border-bottom"><a href="../index.html"><i class="bi fs-6 me-2 bi-window-stack"></i> TOP
+						APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-controller"></i> TOP GAMES</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-duffle-fill"></i> EDUCATION APPS</a>
+				</li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-gear"></i> TOOLS APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-chat-heart-fill"></i> COMMUNICATION
+						APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-wechat"></i> SOCIAL APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-camera-video-fill"></i> VIDEO PLAYERS
+						APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-collection-play-fill"></i> EDITORS
+						APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-ui-checks-grid"></i> PEODUCTIVITY
+						APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6  bi-cart"></i> SHOPPING APPS</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6 bi bi-shield-lock-fill"></i> PRIVACY
+						POLICY</a></li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 bi-chat-left-dots"></i> Contact Us</a></li>
+				<li class="border-bottom"><a href="../sitemap.html"><i class="bi me-2 bi bi-diagram-3"></i> Site Map</a>
+				</li>
+				<li class="border-bottom"><a href="#"><i class="bi me-2 fs-6 bi-info-square"></i> About Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="main-content">
+		<div class="section-container p-2 p-xl-4">
+			<div class="row">
+				<div class="col-md-0 ps-4 ps-lg-3">
+					<div class="row bg-white shadow-sm p-3">
+						<h1>CSS <span class="color_h1">Syntax</span></h1>
+						<hr>
+						<p class="intro">A CSS rule consists of a selector and a declaration block.</p>
+					</div>
 
-							<div class="row bg-white shadow-sm p-3">
-							<h2>CSS Syntax</h2>
-								<div style="background-color:white;padding:1px 8px;border-radius:5px">
-								<p><img src="img_selector.gif" alt="CSS selector" class="w3-image"></p>
-								</div>
-								<p>The selector points to the HTML element you want to style.</p>
-								<p>The declaration block contains one or more declarations separated by 
-								semicolons.</p>
-								<p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
-								<p>Multiple CSS declarations are separated with semicolons, and declaration 
-								blocks are surrounded by curly braces.</p>
-							</div>
-							
-							<div class="about row p-2 py-3 bg-white mt-4 shadow-sm">
-									<!-- Yandex.RTB R-A-3845676-9 -->
-									<div id="yandex_rtb_R-A-3845676-9"></div>
-									<script>
-									window.yaContextCb.push(()=>{
-										Ya.Context.AdvManager.render({
-											"blockId": "R-A-3845676-9",
-											"renderTo": "yandex_rtb_R-A-3845676-9"
-										})
-									})
-									</script>
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<div class="w3-example">
-									<h3>Example</h3>
-									<p>In this example all &lt;p&gt; elements will be center-aligned, with a red 
-									text color:</p>
-									<div class="w3-code notranslate htmlHigh">
-										&lt;!DOCTYPE html&gt;<br>
-										&lt;html&gt;<br>
-										&lt;head&gt;<br>
-										&lt;style&gt;<br>
-										
-										p {<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-										} <br>
-										
-										&lt;/style&gt;<br>
-										&lt;/head&gt;<br>
-										&lt;body&gt;<br><br>
+					<div class="about row p-2 py-3 bg-white mt-4 shadow-sm">
+						<!-- Yandex.RTB R-A-3845676-8 -->
+						<div id="yandex_rtb_R-A-3845676-8"></div>
+						<script>
+							window.yaContextCb.push(() => {
+								Ya.Context.AdvManager.render({
+									"blockId": "R-A-3845676-8",
+									"renderTo": "yandex_rtb_R-A-3845676-8"
+								})
+							})
+						</script>
+					</div><br>
 
-										&lt;p&gt;Hello World!&lt;/p&gt;<br>
-										&lt;p&gt;These paragraphs are styled with CSS.&lt;/p&gt;<br><br>
-
-										&lt;/body&gt;<br>
-										&lt;/html&gt;<br>
-									</div>
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<p style="color:red;text-align:center;">Hello World!</p>
-									<p style="color:red;text-align:center;">These paragraphs are styled with CSS.</p>
-								</div>
-							</div>
-							
-							<div class="about row p-2 py-3 bg-white mt-4 shadow-sm">
-									<!-- Yandex.RTB R-A-3845676-10 -->
-									<div id="yandex_rtb_R-A-3845676-10"></div>
-									<script>
-									window.yaContextCb.push(()=>{
-										Ya.Context.AdvManager.render({
-											"blockId": "R-A-3845676-10",
-											"renderTo": "yandex_rtb_R-A-3845676-10"
-										})
-									})
-									</script>
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<h4>Example Explained</h4>
-								<ul>
-								<li><code class="w3-codespan">p</code> is a selector in CSS (it points to the HTML element you want to style: 
-								&lt;p&gt;).</li>
-								<li><code class="w3-codespan">color</code> is a property, and <code class="w3-codespan">red</code> is the property value</li>
-								<li><code class="w3-codespan">text-align</code> is a property, and <code class="w3-codespan">center</code> is the property value</li>
-								</ul>
-								<div class="w3-note w3-panel">
-								<p>You will learn much more about CSS selectors and CSS properties in the next chapters!</p>
-								</div>
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<h1>CSS <span class="color_h1">Selectors</span></h1>
-
-								<hr>
-								<p class="intro">A CSS selector selects the HTML element(s) you 
-								want to style.</p>
-								<hr>
-
-								<h2>CSS Selectors</h2>
-								<p>CSS selectors are used to &quot;find&quot; (or select) the HTML elements you 
-								want to style.</p>
-								<p>We can divide CSS selectors into five categories:</p>
-								<ul>
-								  <li>Simple selectors (select elements based on name, id, class)</li>
-								  <li><a>Combinator selectors</a> (select  
-								  elements based on a specific relationship between them)</li>
-								  <li><a>Pseudo-class selectors</a> (select elements based on a certain state)</li>
-								  <li><a>Pseudo-elements selectors</a> (select 
-								  and style a part of an element)</li>
-								  <li><a>Attribute selectors</a> (select elements based on 
-								  an attribute or attribute value)</li>
-								</ul>
-								<p>This page will explain the most basic CSS selectors.</p>
-								
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<h2>The CSS element Selector</h2>
-								<p>The element selector selects HTML elements based on the element name.</p>
-								<div class="w3-example">
-									<h3>Example</h3>
-									<p>In this example all &lt;p&gt; elements will be center-aligned, with a red 
-									text color:</p>
-									<div class="w3-code notranslate htmlHigh">
-										&lt;!DOCTYPE html&gt;<br>
-										&lt;html&gt;<br>
-										&lt;head&gt;<br>
-										&lt;style&gt;<br>
-										
-										p {<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-										} <br>
-										
-										&lt;/style&gt;<br>
-										&lt;/head&gt;<br>
-										&lt;body&gt;<br><br>
-
-										&lt;p&gt;Hello World!&lt;/p&gt;<br>
-										&lt;p&gt;These paragraphs are styled with CSS.&lt;/p&gt;<br><br>
-
-										&lt;/body&gt;<br>
-										&lt;/html&gt;<br>
-									</div>
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<p style="color:red;text-align:center;">Hello World!</p>
-									<p style="color:red;text-align:center;">These paragraphs are styled with CSS.</p>
-								</div>
-
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<h2>The CSS id Selector</h2>
-								<p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
-								<p>The id of an element is unique within a page, so the id selector is 
-								used to 
-								select one unique element!</p>
-								<p>To select an element with a specific id, write a hash (#) character, followed by 
-								the id of the element.</p>
-								<div class="w3-example">
-								<h3>Example</h3>
-								<p>The CSS rule below will be applied to the HTML element with id=&quot;para1&quot;:&nbsp;</p>
-
-
-								<div class="w3-code notranslate htmlHigh">
-									&lt;!DOCTYPE html&gt;<br>
-									&lt;html&gt;<br>
-									&lt;head&gt;<br>
-									&lt;style&gt;<br>
-									#para1 {<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-									}<br>
-									&lt;/style&gt;<br>
-									&lt;/head&gt;<br>
-									&lt;body&gt;<br><br>
-
-									&lt;p id=&quot;para1&quot;&gt;Hello World!&lt;/p&gt;<br>
-									&lt;p&gt;This paragraph is not affected by the style.&lt;/p&gt;<br><br>
-
-									&lt;/body&gt;<br>
-									&lt;/html&gt;<br>
-								</div>
-								
-
-								</div>
-								<div class="w3-panel w3-note">
-								 <p><strong>Note:</strong> An id name cannot start with a number!</p>
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<p style="color:red;text-align:center;">Hello World!</p>
-									<p>This paragraph is not affected by the style.</p>
-								</div>
-
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<h2>The CSS class Selector</h2>
-								<p>The class selector selects HTML elements with a specific class attribute.</p>
-								<p>To select elements with a specific class, write a period (.) character, followed by the 
-								class name.</p>
-								<div class="w3-example">
-								<h3>Example</h3>
-								<p>In this example all HTML elements with class=&quot;center&quot; will be red and center-aligned:&nbsp;</p>
-								<div class="w3-code notranslate htmlHigh">
-									&lt;!DOCTYPE html&gt;<br>
-									&lt;html&gt;<br>
-									&lt;head&gt;<br>
-									&lt;style&gt;<br>
-									.center {<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-									}<br>
-									&lt;/style&gt;<br>
-									&lt;/head&gt;<br>
-									&lt;body&gt;<br><br>
-
-									&lt;h1 class=&quot;center&quot;&gt;Red and center-aligned heading&lt;/h1&gt;<br>
-									&lt;p class=&quot;center&quot;&gt;Red and center-aligned paragraph.&lt;/p&gt; <br><br>
-
-									&lt;/body&gt;<br>
-									&lt;/html&gt;<br>
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<h1 style="color:red;text-align:center">Red and center-aligned heading</h1>
-									<p style="color:red;text-align:center">Red and center-aligned paragraph.</p>
-								</div>
-
-								</div>
-
-								<p>You can also specify that only specific HTML elements should be affected by a class.</p>
-								<div class="w3-example">
-								<h3>Example</h3>
-								<p>In this example only &lt;p&gt; elements with class=&quot;center&quot; will be 
-								red and center-aligned:&nbsp;</p>
-								<div class="w3-code notranslate htmlHigh">
-									&lt;!DOCTYPE html&gt;<br>
-									&lt;html&gt;<br>
-									&lt;head&gt;<br>
-									&lt;style&gt;<br>
-									p.center {<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-									}<br>
-									&lt;/style&gt;<br>
-									&lt;/head&gt;<br>
-									&lt;body&gt;<br><br>
-
-									&lt;h1 class=&quot;center&quot;&gt;This heading will not be affected&lt;/h1&gt;<br>
-									&lt;p class=&quot;center&quot;&gt;This paragraph will be red and center-aligned.&lt;/p&gt;<br><br>
-
-									&lt;/body&gt;<br>
-									&lt;/html&gt;<br>
-								</div>
-
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<h1>This heading will not be affected</h1>
-									<p style="text-align:center;color:red;">This paragraph will be red and center-aligned.</p>
-								</div>
-								<br>
-
-								<p>HTML elements 
-								can also refer to more than one class.</p>
-								<div class="w3-example">
-								<h3>Example</h3>
-								<p>In this example the &lt;p&gt; element will be styled according to class=&quot;center&quot; 
-								and to class=&quot;large&quot;:&nbsp;</p>
-								
-								</div>
-								
-								<div class="w3-code notranslate htmlHigh">
-									&lt;!DOCTYPE html&gt;<br>
-									&lt;html&gt;<br>
-									&lt;head&gt;<br>
-									&lt;style&gt;<br>
-									p.center {<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-									}<br><br>
-
-									p.large {<br>
-									  font-size: 300%;<br>
-									}<br>
-									&lt;/style&gt;<br>
-									&lt;/head&gt;<br>
-									&lt;body&gt;<br><br>
-
-									&lt;h1 class=&quot;center&quot;&gt;This heading will not be affected&lt;/h1&gt;<br>
-									&lt;p class=&quot;center&quot;&gt;This paragraph will be red and center-aligned.&lt;/p&gt;<br>
-									&lt;p class=&quot;center large&quot;&gt;This paragraph will be red, center-aligned, and in a large font-size.&lt;/p&gt;<br><br>
-
-									&lt;/body&gt;<br>
-									&lt;/html&gt;<br>
-								</div>
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<h1>This heading will not be affected</h1>
-									<p style="color:red;text-align:center">This paragraph will be red and center-aligned.</p>
-									<p style="color:red;text-align:center; font-size:200%;">This paragraph will be red, center-aligned, and in a large font-size.</p>
-								</div>
-								
-								<hr>
-								<div class="w3-panel w3-note">
-								  <p><strong>Note:</strong> A class name cannot start with a number!</p>
-								</div>
-
-								</div>
-
-								<br>
-								
-								<div class="row bg-white shadow-sm p-3">
-								<h2>The CSS Universal Selector</h2>
-								<p>The universal selector (*) selects all HTML 
-								elements on the page.</p>
-								<div class="w3-example">
-								<h3>Example</h3>
-								<p>The CSS rule below will affect every HTML element on the page:&nbsp;</p>
-								<div class="w3-code notranslate htmlHigh">
-									&lt;!DOCTYPE html&gt;<br>
-									&lt;html&gt;<br>
-									&lt;head&gt;<br>
-									&lt;style&gt;<br>
-									* {<br>
-									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
-									}<br>
-									&lt;/style&gt;<br>
-									&lt;/head&gt;<br>
-									&lt;body&gt;<br><br>
-
-									&lt;h1&gt;Hello world!&lt;/h1&gt;<br><br>
-
-									&lt;p&gt;Every element on the page will be affected by the style.&lt;/p&gt;<br>
-									&lt;p id=&quot;para1&quot;&gt;Me too!&lt;/p&gt;<br>
-									&lt;p&gt;And me!&lt;/p&gt;<br><br>
-
-									&lt;/body&gt;<br>
-									&lt;/html&gt;<br>
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<div style="text-align:center;color:blue;">
-										<h1 style="color:blue;">Hello world!</h1>
-										<p>Every element on the page will be affected by the style.</p>
-										<p id="para1">Me too!</p>
-										<p>And me!</p>
-									</div>
-								</div>
-
-								</div>
-							</div><br>
-							
-							<div class="row bg-white shadow-sm p-3">
-								<h2>The CSS Grouping Selector</h2>
-								<p>The grouping selector selects all the HTML elements with the same style 
-								definitions.</p>
-								<div class="w3-example">
-									<div class="w3-code notranslate htmlHigh">
-										&lt;!DOCTYPE html&gt;<br>
-										&lt;html&gt;<br>
-										&lt;head&gt;<br>
-										&lt;style&gt;<br>
-										h1, h2, p {<br>
-										  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
-										  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-										}<br>
-										&lt;/style&gt;<br>
-										&lt;/head&gt;<br>
-										&lt;body&gt;<br><br>
-
-										&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
-										&lt;h2&gt;Smaller heading!&lt;/h2&gt;<br>
-										&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-
-										&lt;/body&gt;<br>
-										&lt;/html&gt;<br>
-									</div>
-								</div>
-								
-								<hr>
-								
-								<div class="w3-code notranslate htmlHigh" style="background:#eee;padding:10px;border-radius:10px;">
-									<div style="text-align:center;color:red;">
-										<h1 style="color:red;">Hello World!</h1>
-										<h2 style="color:red;">Smaller heading!</h2>
-										<p>This is a paragraph.</p>
-									</div>
-								</div>
-
-								<p>It will be better to group the selectors, to minimize the code.</p>
-								<p>To group selectors, separate each selector with a comma.</p>
-							</div>
-							
-							</div>
-							
-							
-							
-							
+					<div class="row bg-white shadow-sm p-3">
+						<h2>CSS Syntax</h2>
+						<div style="background-color:white;padding:1px 8px;border-radius:5px">
+							<p><img src="img_selector.gif" alt="CSS selector" class="w3-image"></p>
 						</div>
-							
+						<p>The selector points to the HTML element you want to style.</p>
+						<p>The declaration block contains one or more declarations separated by
+							semicolons.</p>
+						<p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+						<p>Multiple CSS declarations are separated with semicolons, and declaration
+							blocks are surrounded by curly braces.</p>
 					</div>
-                </div>
-						
-						<!--Footer Start-->
-					<div>
-						<footer>
-							<p style="text-align:center;font-weight:bolder;">Copyright &copy; 2023 AB App Store</p>
-						</footer>
+
+					<div class="about row p-2 py-3 bg-white mt-4 shadow-sm">
+						<!-- Yandex.RTB R-A-3845676-9 -->
+						<div id="yandex_rtb_R-A-3845676-9"></div>
+						<script>
+							window.yaContextCb.push(() => {
+								Ya.Context.AdvManager.render({
+									"blockId": "R-A-3845676-9",
+									"renderTo": "yandex_rtb_R-A-3845676-9"
+								})
+							})
+						</script>
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>In this example all &lt;p&gt; elements will be center-aligned, with a red
+								text color:</p>
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+
+								p {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								} <br>
+
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
+
+								&lt;p&gt;Hello World!&lt;/p&gt;<br>
+								&lt;p&gt;These paragraphs are styled with CSS.&lt;/p&gt;<br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="w3-code notranslate htmlHigh"
+							style="background:#eee;padding:10px;border-radius:10px;">
+							<p style="color:red;text-align:center;">Hello World!</p>
+							<p style="color:red;text-align:center;">These paragraphs are styled with CSS.</p>
+						</div>
 					</div>
-					<!--Footer End-->
+
+					<div class="about row p-2 py-3 bg-white mt-4 shadow-sm">
+						<!-- Yandex.RTB R-A-3845676-10 -->
+						<div id="yandex_rtb_R-A-3845676-10"></div>
+						<script>
+							window.yaContextCb.push(() => {
+								Ya.Context.AdvManager.render({
+									"blockId": "R-A-3845676-10",
+									"renderTo": "yandex_rtb_R-A-3845676-10"
+								})
+							})
+						</script>
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<h4>Example Explained</h4>
+						<ul>
+							<li><code class="w3-codespan">p</code> is a selector in CSS (it points to the HTML element
+								you want to style:
+								&lt;p&gt;).</li>
+							<li><code class="w3-codespan">color</code> is a property, and <code
+									class="w3-codespan">red</code> is the property value</li>
+							<li><code class="w3-codespan">text-align</code> is a property, and <code
+									class="w3-codespan">center</code> is the property value</li>
+						</ul>
+						<div class="w3-note w3-panel">
+							<p>You will learn much more about CSS selectors and CSS properties in the next chapters!</p>
+						</div>
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<h1>CSS <span class="color_h1">Selectors</span></h1>
+
+						<hr>
+						<p class="intro">A CSS selector selects the HTML element(s) you
+							want to style.</p>
+						<hr>
+
+						<h2>CSS Selectors</h2>
+						<p>CSS selectors are used to &quot;find&quot; (or select) the HTML elements you
+							want to style.</p>
+						<p>We can divide CSS selectors into five categories:</p>
+						<ul>
+							<li>Simple selectors (select elements based on name, id, class)</li>
+							<li><a>Combinator selectors</a> (select
+								elements based on a specific relationship between them)</li>
+							<li><a>Pseudo-class selectors</a> (select elements based on a certain state)</li>
+							<li><a>Pseudo-elements selectors</a> (select
+								and style a part of an element)</li>
+							<li><a>Attribute selectors</a> (select elements based on
+								an attribute or attribute value)</li>
+						</ul>
+						<p>This page will explain the most basic CSS selectors.</p>
+
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<h2>The CSS element Selector</h2>
+						<p>The element selector selects HTML elements based on the element name.</p>
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>In this example all &lt;p&gt; elements will be center-aligned, with a red
+								text color:</p>
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+
+								p {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								} <br>
+
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
+
+								&lt;p&gt;Hello World!&lt;/p&gt;<br>
+								&lt;p&gt;These paragraphs are styled with CSS.&lt;/p&gt;<br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="w3-code notranslate htmlHigh"
+							style="background:#eee;padding:10px;border-radius:10px;">
+							<p style="color:red;text-align:center;">Hello World!</p>
+							<p style="color:red;text-align:center;">These paragraphs are styled with CSS.</p>
+						</div>
+
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<h2>The CSS id Selector</h2>
+						<p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+						<p>The id of an element is unique within a page, so the id selector is
+							used to
+							select one unique element!</p>
+						<p>To select an element with a specific id, write a hash (#) character, followed by
+							the id of the element.</p>
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>The CSS rule below will be applied to the HTML element with id=&quot;para1&quot;:&nbsp;
+							</p>
+
+
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+								#para1 {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
+
+								&lt;p id=&quot;para1&quot;&gt;Hello World!&lt;/p&gt;<br>
+								&lt;p&gt;This paragraph is not affected by the style.&lt;/p&gt;<br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+
+
+						</div>
+						<div class="w3-panel w3-note">
+							<p><strong>Note:</strong> An id name cannot start with a number!</p>
+						</div>
+
+						<hr>
+
+						<div class="w3-code notranslate htmlHigh"
+							style="background:#eee;padding:10px;border-radius:10px;">
+							<p style="color:red;text-align:center;">Hello World!</p>
+							<p>This paragraph is not affected by the style.</p>
+						</div>
+
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<h2>The CSS class Selector</h2>
+						<p>The class selector selects HTML elements with a specific class attribute.</p>
+						<p>To select elements with a specific class, write a period (.) character, followed by the
+							class name.</p>
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>In this example all HTML elements with class=&quot;center&quot; will be red and
+								center-aligned:&nbsp;</p>
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+								.center {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
+
+								&lt;h1 class=&quot;center&quot;&gt;Red and center-aligned heading&lt;/h1&gt;<br>
+								&lt;p class=&quot;center&quot;&gt;Red and center-aligned paragraph.&lt;/p&gt; <br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+
+							<hr>
+
+							<div class="w3-code notranslate htmlHigh"
+								style="background:#eee;padding:10px;border-radius:10px;">
+								<h1 style="color:red;text-align:center">Red and center-aligned heading</h1>
+								<p style="color:red;text-align:center">Red and center-aligned paragraph.</p>
+							</div>
+
+						</div>
+
+						<p>You can also specify that only specific HTML elements should be affected by a class.</p>
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>In this example only &lt;p&gt; elements with class=&quot;center&quot; will be
+								red and center-aligned:&nbsp;</p>
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+								p.center {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
+
+								&lt;h1 class=&quot;center&quot;&gt;This heading will not be affected&lt;/h1&gt;<br>
+								&lt;p class=&quot;center&quot;&gt;This paragraph will be red and
+								center-aligned.&lt;/p&gt;<br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+
+						</div>
+
+						<hr>
+
+						<div class="w3-code notranslate htmlHigh"
+							style="background:#eee;padding:10px;border-radius:10px;">
+							<h1>This heading will not be affected</h1>
+							<p style="text-align:center;color:red;">This paragraph will be red and center-aligned.</p>
+						</div>
+						<br>
+
+						<p>HTML elements
+							can also refer to more than one class.</p>
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>In this example the &lt;p&gt; element will be styled according to
+								class=&quot;center&quot;
+								and to class=&quot;large&quot;:&nbsp;</p>
+
+						</div>
+
+						<div class="w3-code notranslate htmlHigh">
+							&lt;!DOCTYPE html&gt;<br>
+							&lt;html&gt;<br>
+							&lt;head&gt;<br>
+							&lt;style&gt;<br>
+							p.center {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+							}<br><br>
+
+							p.large {<br>
+							font-size: 300%;<br>
+							}<br>
+							&lt;/style&gt;<br>
+							&lt;/head&gt;<br>
+							&lt;body&gt;<br><br>
+
+							&lt;h1 class=&quot;center&quot;&gt;This heading will not be affected&lt;/h1&gt;<br>
+							&lt;p class=&quot;center&quot;&gt;This paragraph will be red and
+							center-aligned.&lt;/p&gt;<br>
+							&lt;p class=&quot;center large&quot;&gt;This paragraph will be red, center-aligned, and in a
+							large font-size.&lt;/p&gt;<br><br>
+
+							&lt;/body&gt;<br>
+							&lt;/html&gt;<br>
+						</div>
+						<hr>
+
+						<div class="w3-code notranslate htmlHigh"
+							style="background:#eee;padding:10px;border-radius:10px;">
+							<h1>This heading will not be affected</h1>
+							<p style="color:red;text-align:center">This paragraph will be red and center-aligned.</p>
+							<p style="color:red;text-align:center; font-size:200%;">This paragraph will be red,
+								center-aligned, and in a large font-size.</p>
+						</div>
+
+						<hr>
+						<div class="w3-panel w3-note">
+							<p><strong>Note:</strong> A class name cannot start with a number!</p>
+						</div>
+
+					</div>
+
 					<br>
-				   </div>
-            <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
 
-			<script>
-			w3CodeColor();
-			</script>
-			
-    </body>
+					<div class="row bg-white shadow-sm p-3">
+						<h2>The CSS Universal Selector</h2>
+						<p>The universal selector (*) selects all HTML
+							elements on the page.</p>
+						<div class="w3-example">
+							<h3>Example</h3>
+							<p>The CSS rule below will affect every HTML element on the page:&nbsp;</p>
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+								* {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
 
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-    <script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
-    <script src="assets/js/script.js"></script>
+								&lt;h1&gt;Hello world!&lt;/h1&gt;<br><br>
 
-    </html>
+								&lt;p&gt;Every element on the page will be affected by the style.&lt;/p&gt;<br>
+								&lt;p id=&quot;para1&quot;&gt;Me too!&lt;/p&gt;<br>
+								&lt;p&gt;And me!&lt;/p&gt;<br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+
+							<hr>
+
+							<div class="w3-code notranslate htmlHigh"
+								style="background:#eee;padding:10px;border-radius:10px;">
+								<div style="text-align:center;color:blue;">
+									<h1 style="color:blue;">Hello world!</h1>
+									<p>Every element on the page will be affected by the style.</p>
+									<p id="para1">Me too!</p>
+									<p>And me!</p>
+								</div>
+							</div>
+
+						</div>
+					</div><br>
+
+					<div class="row bg-white shadow-sm p-3">
+						<h2>The CSS Grouping Selector</h2>
+						<p>The grouping selector selects all the HTML elements with the same style
+							definitions.</p>
+						<div class="w3-example">
+							<div class="w3-code notranslate htmlHigh">
+								&lt;!DOCTYPE html&gt;<br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;style&gt;<br>
+								h1, h2, p {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;<br>
+								&lt;body&gt;<br><br>
+
+								&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+								&lt;h2&gt;Smaller heading!&lt;/h2&gt;<br>
+								&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+
+								&lt;/body&gt;<br>
+								&lt;/html&gt;<br>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="w3-code notranslate htmlHigh"
+							style="background:#eee;padding:10px;border-radius:10px;">
+							<div style="text-align:center;color:red;">
+								<h1 style="color:red;">Hello World!</h1>
+								<h2 style="color:red;">Smaller heading!</h2>
+								<p>This is a paragraph.</p>
+							</div>
+						</div>
+
+						<p>It will be better to group the selectors, to minimize the code.</p>
+						<p>To group selectors, separate each selector with a comma.</p>
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<!--Footer Start-->
+	<div>
+		<footer>
+			<p style="text-align:center;font-weight:bolder;">Copyright &copy; 2023 AB App Store</p>
+		</footer>
+	</div>
+	<!--Footer End-->
+	<br>
+	</div>
+	<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+
+	<script>
+		w3CodeColor();
+	</script>
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
