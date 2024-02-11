@@ -3,9 +3,6 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Yandex.RTB -->
-  <script>window.yaContextCb = window.yaContextCb || []</script>
-  <script src="https://yandex.ru/ads/system/context.js" async></script>
   <style>
     body {
       font-family: "Lato", sans-serif;
@@ -81,21 +78,6 @@
   <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
   <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
   <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-
-  <br>
-  <p></p>
-  <br>
-
-  <!-- Yandex.RTB R-A-3845676-11 -->
-  <script>
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        "blockId": "R-A-3845676-11",
-        "type": "fullscreen",
-        "platform": "desktop"
-      })
-    })
-  </script>
 
   <script>
     function openCity(cityName, elmnt, color) {
