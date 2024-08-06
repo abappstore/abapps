@@ -1,9 +1,0 @@
-https://abapps.netlify.app/tutorials/learnbootstrap
-https://abapps.netlify.app/tutorials/learnjavascript
-https://abapps.netlify.app/tutorials/learncss
-https://abapps.netlify.app/tutorials/learnhtml
-https://abapps.netlify.app/pages/emotionprayer
-https://abapps.netlify.app/pages/cvmaker
-https://abapps.netlify.app/pages/learnhtml
-https://abapps.netlify.app/pages/learnmsexcel
-https://abapps.netlify.app/pages/learnmsword
